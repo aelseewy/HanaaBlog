@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure--bmxgt7p*f=vj17b9%n-36@*5p9+)l+kr*p+*9808z3l4k*wbx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['207.154.253.58', 'www.sewemall.com','sewemall.com', 'hanaaquilt.sewemall.com']
+ALLOWED_HOSTS = []
 
 SITE_ID = 1
 
@@ -91,12 +91,12 @@ WSGI_APPLICATION = 'hanaablog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'hanaablog_data',
-        'USER': 'hanaablog',
+        'USER': 'postgres',
         'PASSWORD': 'Salamat',
         'HOST': 'localhost',
-        'PORT': '',
+        
     }
 }
 
